@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css " href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Bubbler+One|Rock+Salt|Sunshiney" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Pomodoro JS</title>
+</head>
+
+<body>
+  <h1>Pomodoro JS</h1>
+  <header>
+    <div class="container">
+      <div id="sessionlength-container">
+        <p>Session Length</p>
+        <button class="toggle-timer" type="button" id="decrease-session">-</button>
+        <time id="session-length">25</time>
+        <button class="toggle-timer" type="button" id="increase-session">+</button>
+      </div>
+      <button type="button" id="start">Start</button>
+      <button type="button" id="pause">Pause</button>
+      <button type="button" id="reset">Reset</button>
+
+      <div id="breaklength-container">
+        <p>Break Length</p>
+        <button class="toggle-timer" type="button" id="decrease-break">-</button>
+        <time id="break-length">5</time>
+        <button class="toggle-timer" type="button" id="increase-break">+</button>
+      </div>
+    </div>
+  </header>
+  <div id="containerTimer">
+    <div class="timer">
+      <div class="time">
+        <span id="minutes">25</span>
+        <span id="colon">:</span>
+        <span id="seconds">00</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <h2>BF Dev freeCodeCamp</h2>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="index.js" type="text/javascript"></script>
+</body>
