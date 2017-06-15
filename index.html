@@ -13,20 +13,20 @@
   <header>
     <div class="container">
       <div id="sessionlength-container">
-        <p>Session Length</p>
-        <button class="toggle-timer" type="button" id="decrease-session">-</button>
-        <time id="session-length">25</time>
-        <button class="toggle-timer" type="button" id="increase-session">+</button>
+        <p>Work Length</p>
+        <button class="toggle-timer" type="button" id="decreaseWork" onclick="decreaseWork()">-</button>
+        <time id="Work-length">25</time>
+        <button class="toggle-timer" type="button" id="increaseWork" onclick="increaseWork()">+</button>
       </div>
-      <button type="button" id="start">Start</button>
-      <button type="button" id="pause">Pause</button>
-      <button type="button" id="reset">Reset</button>
+      <button type="button" id="startTimer" onclick="startTimer()">Start</button>
+      <button type="button" id="pauseTimer"  onclick="pauseTimer()">Pause</button>
+      <button type="button" id="stopTimer" onclick="stopTimer()">Stop</button>
 
       <div id="breaklength-container">
         <p>Break Length</p>
-        <button class="toggle-timer" type="button" id="decrease-break">-</button>
+        <button class="toggle-timer" type="button" id="decreaseBreak" onclick="decreaseBreak()">-</button>
         <time id="break-length">5</time>
-        <button class="toggle-timer" type="button" id="increase-break">+</button>
+        <button class="toggle-timer" type="button" id="increaseBreak" onclick="increaseBreak()">+</button>
       </div>
     </div>
   </header>
